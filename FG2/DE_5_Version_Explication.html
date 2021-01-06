@@ -1,0 +1,516 @@
+<meta charset="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/608889706f.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+  <title>Pôle-emploi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=yes, maximum-scale=5.0">
+  <style type="text/css">
+  /* Fonts and Content */
+        body, td
+        {
+          font-family: Arial, Helvetica, Geneva, sans-serif;
+          font-size:14px;
+        }
+  
+        body
+        {
+          margin: 0;
+          padding: 0;
+          -webkit-text-size-adjust:none;
+          -ms-text-size-adjust:none;
+        }
+  
+        /* Based on The MailChimp Reset INLINE: Yes. */
+        /* Client-specific Styles */
+        #outlook a
+        {
+          padding:0;
+        }
+  
+        /* Force Outlook to provide a "view in browser" menu link. */
+        body
+        {
+          width:100% !important;
+          -webkit-text-size-adjust:100%;
+          -ms-text-size-adjust:100%;
+          margin:0;
+          padding:0;
+        }
+  
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+        .ExternalClass
+        {
+          width:100%;
+        }
+  
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div
+        {
+          line-height: 100%;
+        }
+  
+        /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        #backgroundTable
+        {
+          margin:0;
+          padding:0;
+          width:100% !important;
+          line-height: 100% !important;
+        }
+  
+        /* End reset */
+        /* Some sensible defaults for imagesBring inline: Yes. */
+        img
+        {
+          outline:none;
+          text-decoration:none;
+          -ms-interpolation-mode: bicubic;
+        }
+  
+        a img
+        {
+          border:none;
+        }
+  
+        .image_fix
+        {
+          display:block;
+        }
+  
+        /* Yahoo paragraph fixBring inline: Yes. */
+        p
+        {
+          margin: 1em 0;
+        }
+  
+        /* Hotmail header color resetBring inline: Yes. */
+        h1, h2, h3, h4, h5, h6
+        {
+          color: #4a4f4e !important;
+        }
+  
+        h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+        {
+          color: blue !important;
+        }
+  
+        h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active
+        {
+          color: red !important;
+          /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+        }
+  
+        h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+        {
+          color: purple !important;
+          /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+        }
+  
+        /* Outlook 07, 10 Padding issue fixBring inline: No.*/
+        table td
+        {
+          border-collapse: collapse;
+        }
+  
+        /* Remove spacing around Outlook 07, 10 tablesBring inline: Yes */
+        table
+        {
+          border-collapse:collapse;
+          mso-table-lspace:0pt;
+          mso-table-rspace:0pt;
+        }
+  
+        /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.Bring inline: Yes. */
+        a
+        {
+          color: orange;
+        }
+  
+        /*******************************************************************************************************MOBILE TARGETING*******************************************************************************************************/
+        @media only screen and (max-device-width: 480px)
+        {
+          /* Part one of controlling phone number linking for mobile. */
+          a[href^="tel"], a[href^="sms"]
+          {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+          }
+  
+          .mobile_link a[href^="tel"], .mobile_link a[href^="sms"]
+          {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+          }
+        }
+  
+        /* More Specific Targeting */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+        {
+          /* You guessed it, ipad (tablets, smaller screens, etc) */
+          /* repeating for the ipad */
+          a[href^="tel"], a[href^="sms"]
+          {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+          }
+  
+          .mobile_link a[href^="tel"], .mobile_link a[href^="sms"]
+          {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+          }
+        }
+  
+        @media only screen and (-webkit-min-device-pixel-ratio: 2)
+        {
+          /* Put your iPhone 4g styles in here */
+        }
+  
+        /* Android targeting */
+        @media only screen and (-webkit-device-pixel-ratio:.75)
+        {
+          /* Put CSS for low density (ldpi) Android layouts in here */
+        }
+  
+        @media only screen and (-webkit-device-pixel-ratio:1)
+        {
+          /* Put CSS for medium density (mdpi) Android layouts in here */
+        }
+  
+        @media only screen and (-webkit-device-pixel-ratio:1.5)
+        {
+          /* Put CSS for high density (hdpi) Android layouts in here */
+        }
+  
+        /* end Android targeting */
+  </style>
+
+  <body style="margin: 0;" bgcolor="#e0e0e0">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td align="center" bgcolor="#e0e0e0">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                
+<!-- Header -->
+                <tr>
+                  <td width="650">
+                    <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                      <tbody>
+                        <tr>
+                          <td width="650" valign="middle" align="left">
+                            <a href="http://www.pole-emploi.fr" title="Accès à la page d'accueil Pôle Emploi">
+                              <img style="display: block;" src="https://candidat.pole-emploi.fr/offres/assets/meta/offre/0/img//email-header.png" alt="Pôle emploi - Accédez à tous vos services candidat." width="650" height="219">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+<!-- Content -->
+                <tr>
+                  <td width="650" bgcolor="#ffffff" style="padding-top: 5px;">
+                    <table width="650" cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td width="35">
+                            <td width="580">
+                              <table width="580" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+                                  <tr>
+                                    <td width="580" height="0" bgcolor="#eeeeee">
+                                  </tr>
+                                  <tr>
+                                    <td width="580">
+                                        <p style="color: #666666;margin:1em 0;">Bonjour Véronique,</p>
+                                        <p style="color: #666666;margin:1em 0;font-weight:bold;">Notre algorithme de recommandation basé sur l'intelligence artificielle a sélectionné ces 5 offres d'emploi pour vous :
+                                          <br>
+                                        </p>
+<!-- Offer 1 -->
+                                        <p style="color: #666666;margin:1em 0;">
+                                         <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th style="font-size: 15px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
+                                              Mécanicien / Mécanicienne automobile
+                                              </th>
+                                              <th rowspan = "3" width="150" style= "text-align:center;vertical-align:middle;overflow:hidden;padding:1px 5px;">
+                                                    <a style="background: transparent; color: #ff5950; border:1px solid #ff5950; padding: 7px 29px !important;border-radius: 0px;font-size: 14px;text-decoration:none;display:inline-block;margin-bottom: 10px;" href= "86750_detailoffre.html" >
+                                                    Voir l'offre
+                                                    </a>
+                                              </th>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top">
+                                                <span style="font-size: 14px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Norauto France &bull; Vals-Près-Le-Puy (à 4.0 km) </span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top", style = "padding-top: 20px; color: #666666;">
+                                                CDI
+                                                &bull; &Agrave; partir de 1680 &euro;  bruts/mois
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </p>
+<!-- Offer 2 -->
+                                        <p style="color: #666666;margin:1em 0;">
+                                          <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th style="font-size: 15px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
+                                              Mécanicien / Mécanicienne poids lourds
+                                              </th>
+                                              <th rowspan = "3" width="150" style= "text-align:center;vertical-align:middle;overflow:hidden;padding:1px 5px;">
+                                                    <a style="background: transparent; color: #ff5950; border:1px solid #ff5950; padding: 7px 29px !important;border-radius: 0px;font-size: 14px;text-decoration:none;display:inline-block;margin-bottom: 10px;" href= "50401_detailoffre.html" >
+                                                    Voir l'offre
+                                                    </a>
+                                              </th>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top">
+                                                <span style="font-size: 14px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Conseil Departemental 43 &bull; Le Puy-En-Velay (à 7.0 km) </span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top", style = "padding-top: 20px; color: #666666;">
+                                                CDD (6 mois)
+                                                &bull; Salaire : inconnu
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </p>
+<!-- Offer 3 -->
+                                        <p style="color: #666666;margin:1em 0;">
+                                          <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th style="font-size: 15px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
+                                              Réceptionnaire en atelier mécanique automobile
+                                              </th>
+                                              <th rowspan = "3" width="150" style= "text-align:center;vertical-align:middle;overflow:hidden;padding:1px 5px;">
+                                                    <a style="background: transparent; color: #ff5950; border:1px solid #ff5950; padding: 7px 29px !important;border-radius: 0px;font-size: 14px;text-decoration:none;display:inline-block;margin-bottom: 10px;" href= "63165_detailoffre.html" >
+                                                    Voir l'offre
+                                                    </a>
+                                              </th>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top">
+                                                <span style="font-size: 14px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Stvi &bull; Brives-Charensac (à 10.0 km) </span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top", style = "padding-top: 20px; color: #666666;">
+                                                CDI
+                                                &bull; &Agrave; partir de 1900 &euro;  bruts/mois
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </p>
+<!-- Offer 4 -->
+                                        <p style="color: #666666;margin:1em 0;">
+                                          <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th style="font-size: 15px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
+                                              Mécanicien / Mécanicienne automobile
+                                              </th>
+                                              <th rowspan = "3" width="150" style= "text-align:center;vertical-align:middle;overflow:hidden;padding:1px 5px;">
+                                                    <a style="background: transparent; color: #ff5950; border:1px solid #ff5950; padding: 7px 29px !important;border-radius: 0px;font-size: 14px;text-decoration:none;display:inline-block;margin-bottom: 10px;" href= "44106_detailoffre.html" >
+                                                    Voir l'offre
+                                                    </a>
+                                              </th>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top">
+                                                <span style="font-size: 14px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Auto Bl &bull; Le Puy-En-Velay (à 7.0 km) </span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top", style = "padding-top: 20px; color: #666666;">
+                                                CDI
+                                                &bull; &Agrave; partir de 2300 &euro;  bruts/mois
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </p>
+<!-- Offer 5 -->
+                                        <p style="color: #666666;margin:1em 0;">
+                                          <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <th style="font-size: 15px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
+                                              Mécanicien / Mécanicienne automobile
+                                              </th>
+                                              <th rowspan = "3" width="150" style= "text-align:center;vertical-align:middle;overflow:hidden;padding:1px 5px;">
+                                                    <a style="background: transparent; color: #ff5950; border:1px solid #ff5950; padding: 7px 29px !important;border-radius: 0px;font-size: 14px;text-decoration:none;display:inline-block;margin-bottom: 10px;" href= "28022_detailoffre.html" >
+                                                    Voir l'offre
+                                                    </a>
+                                              </th>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top">
+                                                <span style="font-size: 14px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Garage De La Pierre Plantee &bull; Saint-Paulien (à 16.0 km) </span>
+                                              </td>
+                                            </tr>
+                                            <tr>
+                                              <td valign="top", style = "padding-top: 20px; color: #666666;">
+                                                CDI
+                                                &bull; &Agrave; partir de 1830 &euro;  bruts/mois
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </p>
+                          <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
+                                              </td>
+                                            </tr>
+                          </table>
+  <!-- Traitement -->                        
+                    <table style = "margin-bottom: 5px; margin-top: 20px; display: block; border-radius:6px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08)" width="580" cellpadding="0" cellspacing="0" border="0" align="center">
+                      <tbody>
+                        <tr>
+                          <td style="padding: 20px;">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0ibTE4NC42NTMgNDU0LjMxaDY2LjQ2djMwLjkwNWgtNjYuNDZ6IiBmaWxsPSIjYmFiYWJhIiBkYXRhLW9yaWdpbmFsPSIjYmFiYWJhIiBzdHlsZT0iIj48L3BhdGg+PHBhdGggZD0ibTI2MC4xMjEgNDU0LjMxaDY3Ljk5MnYzMC45MDVoLTY3Ljk5MnoiIGZpbGw9IiNiYWJhYmEiIGRhdGEtb3JpZ2luYWw9IiNiYWJhYmEiIHN0eWxlPSIiPjwvcGF0aD48ZyBmaWxsPSIjN2I3MjdiIj48cGF0aCBkPSJtNDk5LjI3MyAyNjUuMzQ2LTIyLjE0MS00OS41MjJjLTEuNjktMy43ODEtNi4xMjMtNS40NzMtOS45MDgtMy43ODUtMy43ODEgMS42OS01LjQ3NiA2LjEyNi0zLjc4NSA5LjkwOGwxOC4zNTUgNDEuMDU2LTEwMi45NjEgMjEuOTE2Yy00LjA1Mi44NjItNi42MzcgNC44NDYtNS43NzQgOC44OTcuNzUxIDMuNTI1IDMuODYzIDUuOTQgNy4zMjggNS45NC41MTggMCAxLjA0My0uMDU1IDEuNTY5LS4xNjZsMTEyLjAzMS0yMy44NDdjMi4yMTUtLjQ3MiA0LjA5OC0xLjkxOSA1LjEyNC0zLjkzOHMxLjA4Ny00LjM5Mi4xNjItNi40NTl6IiBmaWxsPSIjN2I3MjdiIiBkYXRhLW9yaWdpbmFsPSIjN2I3MjdiIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0ibTEzMy4xNjYgMjg0LjkxOC0xMDIuOTYtMjEuOTE2IDE4LjM1NS00MS4wNTZjMS42OTEtMy43ODItLjAwNC04LjIxOC0zLjc4Ni05LjkwOHMtOC4yMTcuMDAzLTkuOTA4IDMuNzg1bC0yMi4xNCA0OS41MjJjLS45MjQgMi4wNjctLjg2NSA0LjQ0MS4xNjEgNi40NnMyLjkwOSAzLjQ2NiA1LjEyNCAzLjkzOGwxMTIuMDMxIDIzLjg0N2MuNTI2LjExMSAxLjA1Mi4xNjYgMS41NjkuMTY2IDMuNDY1IDAgNi41NzgtMi40MTYgNy4zMjgtNS45NC44NjItNC4wNTItMS43MjMtOC4wMzYtNS43NzQtOC44OTh6IiBmaWxsPSIjN2I3MjdiIiBkYXRhLW9yaWdpbmFsPSIjN2I3MjdiIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjxwYXRoIGQ9Im0yNjUuODQyIDUwMi45NThoLTE5LjY4NGMtNy4wODEgMC0xMi44MjItNS43NDEtMTIuODIyLTEyLjgyMnYtMTAxLjE5Mmg0NS4zMjh2MTAxLjE5M2MwIDcuMDgxLTUuNzQxIDEyLjgyMS0xMi44MjIgMTIuODIxeiIgZmlsbD0iI2ZmNTk1MCIgZGF0YS1vcmlnaW5hbD0iIzcxYzVmZiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxnPjxnIGZpbGw9IiM3MWM1ZmYiPjxwYXRoIGQ9Im0yODguMTU3IDY1Ljg1NWMtOS4zMTctNy4wNjYtMjAuNDI0LTEwLjgwMi0zMi4xMjEtMTAuODAyLTExLjczMSAwLTIyLjg2OCAzLjc1Ny0zMi4yMDUgMTAuODY1LTMuMjk2IDIuNTEtMy45MzQgNy4yMTUtMS40MjQgMTAuNTExIDEuNDc2IDEuOTM4IDMuNzExIDIuOTU3IDUuOTczIDIuOTU3IDEuNTgzIDAgMy4xODEtLjQ5OSA0LjUzOC0xLjUzMiA2LjcwMy01LjEwNCAxNC42OTctNy44MDEgMjMuMTE5LTcuODAxIDguMzk2IDAgMTYuMzY5IDIuNjgxIDIzLjA1NyA3Ljc1MyAzLjMwMiAyLjUwNSA4LjAwNiAxLjg1NyAxMC41MDgtMS40NDMgMi41MDEtMy4zIDEuODU2LTguMDA1LTEuNDQ1LTEwLjUwOHoiIGZpbGw9IiNmZjU5NTAiIGRhdGEtb3JpZ2luYWw9IiM3MWM1ZmYiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCBkPSJtMzAxLjEyNyA0Mi4yODFjLTEzLjA4Ny05LjkzMi0yOC42OC0xNS4xODEtNDUuMDkxLTE1LjE4MS0xNi40NTMgMC0zMi4wNzMgNS4yNzEtNDUuMTcyIDE1LjI0Mi0zLjI5NSAyLjUwOS0zLjkzNCA3LjIxNS0xLjQyNSAxMC41MTEgMS40NzYgMS45MzggMy43MTEgMi45NTcgNS45NzMgMi45NTcgMS41ODMgMCAzLjE4LS40OTkgNC41MzgtMS41MzIgMTAuNDY1LTcuOTY3IDIyLjk0NC0xMi4xNzggMzYuMDg2LTEyLjE3OCAxMy4xMDkgMCAyNS41NjYgNC4xOTQgMzYuMDI0IDEyLjEzIDMuMjk5IDIuNTAzIDguMDAzIDEuODU5IDEwLjUwOC0xLjQ0MSAyLjUwNC0zLjI5OSAxLjg1OC04LjAwNC0xLjQ0MS0xMC41MDh6IiBmaWxsPSIjZmY1OTUwIiBkYXRhLW9yaWdpbmFsPSIjNzFjNWZmIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0ibTMxMy41OSAxOS4zODNjLTE2LjcwMS0xMi42ODEtMzYuNjAyLTE5LjM4My01Ny41NTQtMTkuMzgzLTIwLjk5NSAwLTQwLjkyNCA2LjcyNC01Ny42MzMgMTkuNDQzLTMuMjk2IDIuNTA5LTMuOTM0IDcuMjE1LTEuNDI1IDEwLjUxMSAxLjQ3NiAxLjkzOCAzLjcxMSAyLjk1NyA1Ljk3MyAyLjk1NyAxLjU4MyAwIDMuMTgtLjQ5OSA0LjUzOC0xLjUzMiAxNC4wNzUtMTAuNzE1IDMwLjg2Mi0xNi4zNzkgNDguNTQ3LTE2LjM3OSAxNy42NDggMCAzNC40MTQgNS42NDYgNDguNDgzIDE2LjMzIDMuMjk5IDIuNTA0IDguMDA0IDEuODYxIDEwLjUwOS0xLjQzOHMxLjg2LTguMDA0LTEuNDM4LTEwLjUwOXoiIGZpbGw9IiNmZjU5NTAiIGRhdGEtb3JpZ2luYWw9IiM3MWM1ZmYiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PHBhdGggZD0ibTI1NiA3OC41MDRjLTQuMTQyIDAtNy41IDMuMzU3LTcuNSA3LjV2MzAuNzE1YzAgNC4xNDMgMy4zNTggNy41IDcuNSA3LjUgNC4xNDMgMCA3LjUtMy4zNTcgNy41LTcuNXYtMzAuNzE1YzAtNC4xNDMtMy4zNTgtNy41LTcuNS03LjV6IiBmaWxsPSIjN2I3MjdiIiBkYXRhLW9yaWdpbmFsPSIjN2I3MjdiIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjxnIGZpbGw9IiNmZjkxNTQiPjxjaXJjbGUgY3g9IjE0MS43NDciIGN5PSIyODguOTMxIiByPSIyNS43NTUiIGZpbGw9IiNmZjkxNTQiIGRhdGEtb3JpZ2luYWw9IiNmZjkxNTQiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjM3MC4yNTMiIGN5PSIyODguOTMxIiByPSIyNS43NTUiIGZpbGw9IiNmZjkxNTQiIGRhdGEtb3JpZ2luYWw9IiNmZjkxNTQiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPjxwYXRoIGQ9Im0zOTkuODUgMTU2LjE0NWMxLjkwNC04LjMxOSAxMC4xOTMtMTMuNTE5IDE4LjUxMi0xMS42MTRzMTMuNTE5IDEwLjE5MiAxMS42MTQgMTguNTEyYy0uOTY4IDQuMjI4LS43MSA4LjYzNi43NDUgMTIuNzQ3IDQuMjE3IDExLjkxNSAxNy4zNDEgMTguMTc4IDI5LjI1NiAxMy45NjEgMTEuOTItNC4yMTkgMTguMTg4LTE3LjM0NCAxMy45NzEtMjkuMjU5LTEuNDU1LTQuMTExLTQuMDI3LTcuNy03LjQzOS0xMC4zNzctNi43MTQtNS4yNjgtNy44ODUtMTQuOTgyLTIuNjE3LTIxLjY5NnMxNC45ODMtNy44ODYgMjEuNjk2LTIuNjE3YzguMDMxIDYuMzAyIDE0LjA4IDE0LjczMiAxNy40OTUgMjQuMzc5IDkuOTAyIDI3Ljk4LTQuODA5IDU4LjgwMS0zMi43OTUgNjguNzA1LTI3Ljk4IDkuOTAyLTU4Ljc5OS00LjgwNS02OC43MDEtMzIuNzg1LTMuNDE1LTkuNjQ3LTQuMDE2LTIwLjAwNS0xLjczNy0yOS45NTZ6IiBmaWxsPSIjZmY5MTU0IiBkYXRhLW9yaWdpbmFsPSIjZmY5MTU0IiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PGNpcmNsZSBjeD0iNDkyLjQyNyIgY3k9IjI2OC40MDciIHI9IjE5LjU3MyIgZmlsbD0iI2ZmOTE1NCIgZGF0YS1vcmlnaW5hbD0iI2ZmOTE1NCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9jaXJjbGU+PHBhdGggZD0ibTExMi4xNSAxNTYuMTQ1Yy0xLjkwNC04LjMxOS0xMC4xOTMtMTMuNTE5LTE4LjUxMi0xMS42MTRzLTEzLjUxOSAxMC4xOTItMTEuNjE0IDE4LjUxMmMuOTY4IDQuMjI4LjcxIDguNjM2LS43NDUgMTIuNzQ3LTQuMjE3IDExLjkxNS0xNy4zNDEgMTguMTc4LTI5LjI1NiAxMy45NjEtMTEuOTItNC4yMTktMTguMTg4LTE3LjM0NC0xMy45NzEtMjkuMjU5IDEuNDU1LTQuMTExIDQuMDI3LTcuNyA3LjQzOS0xMC4zNzcgNi43MTQtNS4yNjggNy44ODUtMTQuOTgyIDIuNjE3LTIxLjY5NnMtMTQuOTgzLTcuODg2LTIxLjY5Ni0yLjYxN2MtOC4wMzEgNi4zMDItMTQuMDggMTQuNzMyLTE3LjQ5NSAyNC4zNzktOS45MDIgMjcuOTggNC44MDkgNTguODAxIDMyLjc5NSA2OC43MDUgMjcuOTggOS45MDIgNTguNzk5LTQuODA1IDY4LjcwMS0zMi43ODUgMy40MTUtOS42NDcgNC4wMTYtMjAuMDA1IDEuNzM3LTI5Ljk1NnoiIGZpbGw9IiNmZjkxNTQiIGRhdGEtb3JpZ2luYWw9IiNmZjkxNTQiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSIxOS41NzMiIGN5PSIyNjguNDA3IiByPSIxOS41NzMiIGZpbGw9IiNmZjkxNTQiIGRhdGEtb3JpZ2luYWw9IiNmZjkxNTQiIHN0eWxlPSIiIGNsYXNzPSIiPjwvY2lyY2xlPjwvZz48cGF0aCBkPSJtMzU0LjQwMiA0MDUuMTMzaC0xOTYuODA0Yy01LjM5NCAwLTkuNzY3LTQuMzczLTkuNzY3LTkuNzY3di0xNjYuMTUxaDIxNi4zMzh2MTY2LjE1MmMwIDUuMzk0LTQuMzczIDkuNzY2LTkuNzY3IDkuNzY2eiIgZmlsbD0iI2NiY2JjYiIgZGF0YS1vcmlnaW5hbD0iI2NiY2JjYiIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zMzMuMjY0IDIyOS4yMTV2MTc1LjkxOGgyMS4xMzljNS4zOTQgMCA5Ljc2Ny00LjM3MyA5Ljc2Ny05Ljc2N3YtMTY2LjE1MXoiIGZpbGw9IiNiYWJhYmEiIGRhdGEtb3JpZ2luYWw9IiNiYWJhYmEiIHN0eWxlPSIiPjwvcGF0aD48cGF0aCBkPSJtMzY0LjE2OSAyNDMuMTJoLTIxNi4zMzh2LTI1LjczM2MwLTU5Ljc0IDQ4LjQyOS0xMDguMTY5IDEwOC4xNjktMTA4LjE2OSA1OS43NCAwIDEwOC4xNjkgNDguNDI5IDEwOC4xNjkgMTA4LjE2OXoiIGZpbGw9IiNmZjU5NTAiIGRhdGEtb3JpZ2luYWw9IiM3MWM1ZmYiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCBkPSJtMjU2IDEwOS4yMThjLTUuMjQ4IDAtMTAuNDA1LjM4MS0xNS40NTMgMS4xMDQgNTIuNDE5IDcuNDk5IDkyLjcxNiA1Mi41NzMgOTIuNzE2IDEwNy4wNjV2MjUuNzMzaDMwLjkwNXYtMjUuNzMzYy4wMDEtNTkuNzQtNDguNDI4LTEwOC4xNjktMTA4LjE2OC0xMDguMTY5eiIgZmlsbD0iI2ZiMzcyYyIgZGF0YS1vcmlnaW5hbD0iIzJhYjZmZSIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0yMDIuNDMgNDMzLjcxdjcyLjExYzAgMy40MS0yLjc3IDYuMTgtNi4xOCA2LjE4aC0xMTUuMzhjLTMuNDEgMC02LjE4LTIuNzctNi4xOC02LjE4di03Mi4xMWMwLTMuNDIgMi43Ny02LjE4IDYuMTgtNi4xOGgxMTUuMzhjMy40MSAwIDYuMTggMi43NiA2LjE4IDYuMTh6IiBmaWxsPSIjN2I3MjdiIiBkYXRhLW9yaWdpbmFsPSIjN2I3MjdiIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0ibTE5Ni4yNDkgNDI3LjUyNWgtMzAuOTA1YzMuNDE0IDAgNi4xODEgMi43NjcgNi4xODEgNi4xODF2NzIuMTEzYzAgMy40MTQtMi43NjcgNi4xODEtNi4xODEgNi4xODFoMzAuOTA1YzMuNDE0IDAgNi4xODEtMi43NjcgNi4xODEtNi4xODF2LTcyLjExM2MuMDAxLTMuNDEzLTIuNzY3LTYuMTgxLTYuMTgxLTYuMTgxeiIgZmlsbD0iIzY4NjE2OSIgZGF0YS1vcmlnaW5hbD0iIzY4NjE2OSIgc3R5bGU9IiI+PC9wYXRoPjxnIGZpbGw9IiM1NTUwNTUiPjxwYXRoIGQ9Im03NC42OSA0NDYuODFoMTI3Ljc0djE1aC0xMjcuNzR6IiBmaWxsPSIjNTU1MDU1IiBkYXRhLW9yaWdpbmFsPSIjNTU1MDU1IiBzdHlsZT0iIj48L3BhdGg+PHBhdGggZD0ibTc0LjY5IDQ3Ny43MWgxMjcuNzR2MTVoLTEyNy43NHoiIGZpbGw9IiM1NTUwNTUiIGRhdGEtb3JpZ2luYWw9IiM1NTUwNTUiIHN0eWxlPSIiPjwvcGF0aD48L2c+PHBhdGggZD0ibTQzNy4zMSA0MzMuNzF2NzIuMTFjMCAzLjQxLTIuNzcgNi4xOC02LjE4IDYuMThoLTExNS4zOGMtMy40MSAwLTYuMTgtMi43Ny02LjE4LTYuMTh2LTcyLjExYzAtMy40MiAyLjc3LTYuMTggNi4xOC02LjE4aDExNS4zOGMzLjQxIDAgNi4xOCAyLjc2IDYuMTggNi4xOHoiIGZpbGw9IiM3YjcyN2IiIGRhdGEtb3JpZ2luYWw9IiM3YjcyN2IiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCBkPSJtNDMxLjEzMSA0MjcuNTI1aC0zMC45MDVjMy40MTQgMCA2LjE4MSAyLjc2NyA2LjE4MSA2LjE4MXY3Mi4xMTNjMCAzLjQxNC0yLjc2NyA2LjE4MS02LjE4MSA2LjE4MWgzMC45MDVjMy40MTQgMCA2LjE4MS0yLjc2NyA2LjE4MS02LjE4MXYtNzIuMTEzYzAtMy40MTMtMi43NjgtNi4xODEtNi4xODEtNi4xODF6IiBmaWxsPSIjNjg2MTY5IiBkYXRhLW9yaWdpbmFsPSIjNjg2MTY5IiBzdHlsZT0iIj48L3BhdGg+PGcgZmlsbD0iIzU1NTA1NSI+PHBhdGggZD0ibTMwOS41NyA0NDYuODFoMTI3Ljc0djE1aC0xMjcuNzR6IiBmaWxsPSIjNTU1MDU1IiBkYXRhLW9yaWdpbmFsPSIjNTU1MDU1IiBzdHlsZT0iIj48L3BhdGg+PHBhdGggZD0ibTMwOS41NyA0NzcuNzFoMTI3Ljc0djE1aC0xMjcuNzR6IiBmaWxsPSIjNTU1MDU1IiBkYXRhLW9yaWdpbmFsPSIjNTU1MDU1IiBzdHlsZT0iIj48L3BhdGg+PC9nPjxwYXRoIGQ9Im0zMTYuMzYgMjc1LjU3M2gtMTIwLjcyYy02LjQ5MSAwLTExLjc1My01LjI2Mi0xMS43NTMtMTEuNzUzdi02OS4yMWMwLTYuNDkxIDUuMjYyLTExLjc1MyAxMS43NTMtMTEuNzUzaDEyMC43MmM2LjQ5MSAwIDExLjc1MyA1LjI2MiAxMS43NTMgMTEuNzUzdjY5LjIxMWMwIDYuNDkxLTUuMjYyIDExLjc1Mi0xMS43NTMgMTEuNzUyeiIgZmlsbD0iI2ZmOTE1NCIgZGF0YS1vcmlnaW5hbD0iI2ZmOTE1NCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIGQ9Im0zMTYuMzYgMTgyLjg1N2gtMzAuOTA1YzYuNDkxIDAgMTEuNzUzIDUuMjYyIDExLjc1MyAxMS43NTN2NjkuMjExYzAgNi40OTEtNS4yNjIgMTEuNzUzLTExLjc1MyAxMS43NTNoMzAuOTA1YzYuNDkxIDAgMTEuNzUzLTUuMjYyIDExLjc1My0xMS43NTN2LTY5LjIxMWMwLTYuNDkxLTUuMjYyLTExLjc1My0xMS43NTMtMTEuNzUzeiIgZmlsbD0iI2ZmN2YzZSIgZGF0YS1vcmlnaW5hbD0iI2ZmN2YzZSIgc3R5bGU9IiI+PC9wYXRoPjxwYXRoIGQ9Im0yODQuODQ1IDM3Mi43NTRoLTU3LjY5Yy0zLjQxNCAwLTYuMTgxLTIuNzY3LTYuMTgxLTYuMTgxdi0yOC44NDVjMC0zLjQxNCAyLjc2Ny02LjE4MSA2LjE4MS02LjE4MWg1Ny42OWMzLjQxNCAwIDYuMTgxIDIuNzY3IDYuMTgxIDYuMTgxdjI4Ljg0NWMwIDMuNDEzLTIuNzY3IDYuMTgxLTYuMTgxIDYuMTgxeiIgZmlsbD0iI2ZmZDg2ZSIgZGF0YS1vcmlnaW5hbD0iI2ZmZDg2ZSIgc3R5bGU9IiI+PC9wYXRoPjxnIGZpbGw9IiNlNGY3ZmMiPjxwYXRoIGQ9Im0yNDAuNjM1IDIyMS43MTVoLTIwLjEyOGMtNC4xNDIgMC03LjUgMy4zNTctNy41IDcuNXMzLjM1OCA3LjUgNy41IDcuNWgyMC4xMjhjNC4xNDIgMCA3LjUtMy4zNTcgNy41LTcuNXMtMy4zNTgtNy41LTcuNS03LjV6IiBmaWxsPSIjZTRmN2ZjIiBkYXRhLW9yaWdpbmFsPSIjZTRmN2ZjIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggZD0ibTI5MS40OTIgMjIxLjcxNWgtMjAuMTI4Yy00LjE0MyAwLTcuNSAzLjM1Ny03LjUgNy41czMuMzU3IDcuNSA3LjUgNy41aDIwLjEyOGM0LjE0MyAwIDcuNS0zLjM1NyA3LjUtNy41cy0zLjM1Ny03LjUtNy41LTcuNXoiIGZpbGw9IiNlNGY3ZmMiIGRhdGEtb3JpZ2luYWw9IiNlNGY3ZmMiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Robot" width="110" height="110">
+                          </td>
+                          <td style="padding: 20px 35px 20px 35px;" align="justify">
+                            <h2 style="color: #ff5950!important; font-size: 20px;  font-variant: small-caps;">Notre algorithme</h2>
+                            <span style="font-style: italic;  font-variant: small-caps; color: #ff5950; font-weight: bold; font-size: 16px;">En bref :</span><span style="font-style: italic;"> Pour vous faire ces suggestions d'offres, notre algorithme se base sur les embauches passées de demandeurs d'emploi qui vous ressemblent.</span>
+
+                            </td>
+                        </tr>
+                      </tbody>
+                        <tbody>
+                          <tr>
+                            <td style="padding: 15px 35px 20px 35px;" align="justify" colspan="2">
+                                <span>   
+                                Notre algorithme utilise les éléments présents dans votre profil (dont l'emploi recherché, la formation, l'expérience et les compétences) pour identifier les demandeurs d'emploi qui vous ressemblent parmi ceux ayant été embauchés dernièrement. Ensuite, l'algorithme analyse les caractéristiques des offres sur lesquelles ces demandeurs d'emploi ont été embauchés dans le passé. Enfin, l'algorithme vous recommande les offres en ligne actuellement qui ressemblent le plus à ces anciennes offres.
+                                    
+                                <br><br>
+                                <i class="fas fa-exclamation-triangle fa-1x" style="color:   #ff5950;"></i> Malgré nos efforts pour rendre ce système fiable et précis, il est important de comprendre que les prédictions qu'il génère peuvent comporter une marge d’erreur.
+                              </span>
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+<!-- Bye bye -->
+                       <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="border: 1px; border-color: #cccccc; border-style: none none none none; padding-bottom: 10px">
+                                            </td>
+                                        </tr>
+                        </table>
+                        <p style="color: #666666;margin:1em 0;">Vous pouvez consulter l'ensemble des offres en vous connectant à votre espace personnel sur le site
+                          <a style="text-decoration:underline; color:#ff5950" href="http://www.pole-emploi.fr">pole-emploi.fr</a> ou sur l'application Mes Offres sur
+                          <a style="text-decoration:underline; color:#ff5950" href="https://itunes.apple.com/app/id563863597?mt=8">iTunes Store</a>/
+                          <a style="text-decoration:underline; color:#ff5950" href="https://play.google.com/store/apps/details?id=com.poleemploi.pemobile">Google Play</a>
+                        </p>
+                        <p style="color: #666666; margin:0 0 1em 0;">Cordialement,
+                          <br>L'équipe Pôle emploi</p>
+                        <br>
+                      </tr>
+                      <tr>
+                                    <td width="580" height="1" bgcolor="#eee" style = "padding: 10px;">
+                                        Information Focus Group : vous pouvez consulter le profil du demandeur d'emploi qui nous a servi à calculer ces recommandations  <a style="text-decoration:underline; color:#ff5950" href= Profilsource_5.html >ici</a>.
+                                  </tr>
+                    </tbody>
+                  </table>
+                  </td>
+                  <td width="35">
+            </tr>
+          </tbody>
+        </table>
+        </td>
+    </tr>
+<!-- Footer -->
+                <tr>
+                  <tr>
+                    <td width="650" height="60" bgcolor="#ffffff">
+                  </tr>
+                  <tr>
+                    <td width="650">
+                      <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#2b2e30">
+                        <tbody>
+                          <tr>
+                            <td colspan="5" height="15">
+                          </tr>
+                          <tr>
+                            <td width="35">
+                              <td width="300" valign="middle">
+                                <p align="left" style="color:#fff; font-size: 0.7em;">© 2018 Pôle emploi. Tous droits réservés.</p>
+                              </td>
+                              <td width="35">
+                          </tr>
+                          <tr>
+                            <td colspan="5" height="15">
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td width="650">
+                      <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#3e4249">
+                        <tbody>
+                          <tr>
+                            <td colspan="5" height="30">
+                          </tr>
+                          <tr>
+                            <td width="35">
+                              <td width="580" valign="middle">
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Ce courriel vous est envoyé automatiquement, merci de ne pas utiliser la fonction &quot;répondre à l'expéditeur&quot;.</p>
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Une question&nbsp;?
+                                  <a href="http://www1.pole-emploi.fr/faq/" target="_blank" style="color:#fff;">Consultez notre FAQ</a>
+                                </p>
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Vous disposez d'un droit d'accès et de rectification aux informations qui vous concernent auprès de Pôle emploi conformément à la loi du 6 janvier 1978, modifiée, relative à l'informatique, aux fichiers et aux libertés.</p>
+                              </td>
+                              <td width="35">
+                          </tr>
+                          <tr>
+                            <td colspan="5" height="30">
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                  </tr>
+              </tbody>
+            </table>
+            </td>
+            </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html>
