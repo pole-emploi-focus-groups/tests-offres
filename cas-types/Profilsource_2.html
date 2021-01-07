@@ -1,0 +1,373 @@
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <script src="https://kit.fontawesome.com/608889706f.js" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+  <title>Pôle-emploi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=yes, maximum-scale=5.0">
+  <style type="text/css">
+  /* Fonts and Content */
+        body, td
+        {
+          font-family: Arial, Helvetica, Geneva, sans-serif;
+          font-size:14px;
+        }
+  
+        body
+        {
+          margin: 0;
+          padding: 0;
+          -webkit-text-size-adjust:none;
+          -ms-text-size-adjust:none;
+        }
+  
+        /* Based on The MailChimp Reset INLINE: Yes. */
+        /* Client-specific Styles */
+        #outlook a
+        {
+          padding:0;
+        }
+  
+        /* Force Outlook to provide a "view in browser" menu link. */
+        body
+        {
+          width:100% !important;
+          -webkit-text-size-adjust:100%;
+          -ms-text-size-adjust:100%;
+          margin:0;
+          padding:0;
+        }
+  
+        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+        .ExternalClass
+        {
+          width:100%;
+        }
+  
+        /* Force Hotmail to display emails at full width */
+        .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div
+        {
+          line-height: 100%;
+        }
+  
+        /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+        #backgroundTable
+        {
+          margin:0;
+          padding:0;
+          width:100% !important;
+          line-height: 100% !important;
+        }
+  
+        /* End reset */
+        /* Some sensible defaults for imagesBring inline: Yes. */
+        img
+        {
+          outline:none;
+          text-decoration:none;
+          -ms-interpolation-mode: bicubic;
+        }
+  
+        a img
+        {
+          border:none;
+        }
+  
+        .image_fix
+        {
+          display:block;
+        }
+  
+        /* Yahoo paragraph fixBring inline: Yes. */
+        p
+        {
+          margin: 1em 0;
+        }
+  
+        /* Hotmail header color resetBring inline: Yes. */
+        h1, h2, h3, h4, h5, h6
+        {
+          color: #4a4f4e !important;
+        }
+  
+        h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+        {
+          color: blue !important;
+        }
+  
+        h1 a:active, h2 a:active,  h3 a:active, h4 a:active, h5 a:active, h6 a:active
+        {
+          color: red !important;
+          /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+        }
+  
+        h1 a:visited, h2 a:visited,  h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited
+        {
+          color: purple !important;
+          /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+        }
+  
+        /* Outlook 07, 10 Padding issue fixBring inline: No.*/
+        table td
+        {
+          border-collapse: collapse;
+        }
+  
+        /* Remove spacing around Outlook 07, 10 tablesBring inline: Yes */
+        table
+        {
+          border-collapse:collapse;
+          mso-table-lspace:0pt;
+          mso-table-rspace:0pt;
+        }
+  
+        /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.Bring inline: Yes. */
+        a
+        {
+          color: orange;
+        }
+  
+        /*******************************************************************************************************MOBILE TARGETING*******************************************************************************************************/
+        @media only screen and (max-device-width: 480px)
+        {
+          /* Part one of controlling phone number linking for mobile. */
+          a[href^="tel"], a[href^="sms"]
+          {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+          }
+  
+          .mobile_link a[href^="tel"], .mobile_link a[href^="sms"]
+          {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+          }
+        }
+  
+        /* More Specific Targeting */
+        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+        {
+          /* You guessed it, ipad (tablets, smaller screens, etc) */
+          /* repeating for the ipad */
+          a[href^="tel"], a[href^="sms"]
+          {
+            text-decoration: none;
+            color: blue;
+            /* or whatever your want */
+            pointer-events: none;
+            cursor: default;
+          }
+  
+          .mobile_link a[href^="tel"], .mobile_link a[href^="sms"]
+          {
+            text-decoration: default;
+            color: orange !important;
+            pointer-events: auto;
+            cursor: default;
+          }
+        }
+  
+        @media only screen and (-webkit-min-device-pixel-ratio: 2)
+        {
+          /* Put your iPhone 4g styles in here */
+        }
+  
+        /* Android targeting */
+        @media only screen and (-webkit-device-pixel-ratio:.75)
+        {
+          /* Put CSS for low density (ldpi) Android layouts in here */
+        }
+  
+        @media only screen and (-webkit-device-pixel-ratio:1)
+        {
+          /* Put CSS for medium density (mdpi) Android layouts in here */
+        }
+  
+        @media only screen and (-webkit-device-pixel-ratio:1.5)
+        {
+          /* Put CSS for high density (hdpi) Android layouts in here */
+        }
+  
+        /* end Android targeting */
+  </style>
+
+  <body style="margin: 0;" bgcolor="#e0e0e0">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr>
+          <td align="center" bgcolor="#e0e0e0">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                
+<!-- Header -->
+                <tr>
+                  <td width="650">
+                    <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                      <tbody>
+                        <tr>
+                          <td width="650" valign="middle" align="left">
+                            <a href="" title="Accès à la page d'accueil Pôle Emploi">
+                              <img style="display: block;" src="https://candidat.pole-emploi.fr/offres/assets/meta/offre/0/img//email-header.png" alt="Pôle emploi - Accédez à tous vos services candidat." width="650" height="219">
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+
+<!-- Content -->
+                <tr>
+                  <td width="650" bgcolor="#ffffff" style="padding-top: 5px;">
+                    <table width="650" cellpadding="0" cellspacing="0" border="0">
+                      <tbody>
+                        <tr>
+                          <td width="35">
+                            <td width="580">
+                             
+                                 
+                                        
+<!-- Bye bye -->
+                                     <table style = "margin-top: 20px;" width="580" cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <tbody>
+                                  <tr>
+                                   <th width="400">
+                                     
+                                    <span style="color: #ff5950!important; font-size: 20px;  font-variant: small-caps; vertical-align: bottom">Voici le profil de Patricia :</span>
+                                    </th>
+                                      <th rowspan = "1" width = "100" style="padding: 0px;">    
+                                    <img src=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ2NCA0NjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTM4Ni4wMDEgNDE2Ljc0djM5LjI2YzAgNC40Mi0zLjU4IDgtOCA4aC0yOTJjLTQuNDIgMC04LTMuNTgtOC04di0zOS4yNmMwLTMwLjE5IDE3Ljk1LTU2LjIgNDMuNzYtNjcuOTMtMTAuNTMxLTguMzc5LTI2LjU4Mi0xOS42NDEtMzguMjYtNDMuODctMTYuMjY1LTMzLjY5OC0xMy40ODEtNzMuNDUyIDcuMjQtMTA0LjU3IDExLjI2LTE2LjkgMTcuMjYtMzYuNzQgMTcuMjYtNTcuMDR2LTQzLjMzYzAtNTUuMjMgNDQuNzctMTAwIDEwMC0xMDBoNDhjNTUuMjMgMCAxMDAgNDQuNzcgMTAwIDEwMCAwIDQ1Ljg4Ny0xLjEyMSA1NC44NzMgNC40MSA3My4xMiA3LjgwNSAyNS44MDEgMTguMTE0IDI4Ljk5MyAyNi4wNiA1NS4yNSAxMi40OTEgNDEuMjc0LTEuMzI2IDg2LjI4Ny0zNS4zNyAxMTMuMzlsLTguODYgNy4wNWMyNS44MSAxMS43MyA0My43NiAzNy43NCA0My43NiA2Ny45M3oiIGZpbGw9IiNmZmRmYmEiIGRhdGEtb3JpZ2luYWw9IiNmZmRmYmEiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0zODYuMDAxIDQxNi43NHYzOS4yNmMwIDQuNDE4LTMuNTgyIDgtOCA4aC0yOTJjLTQuNDE4IDAtOC0zLjU4Mi04LTh2LTM5LjI2YzAtNDEuMTYyIDMzLjM2OS03NC41NyA3NC41Ny03NC41NyA2LjEzIDAgMTEuOTUtMS4zMyAxNy4xOC0zLjcxbC4yNS41NCA1Ny4xMDMgNDQuMjA4YzIuODgzIDIuMjMyIDYuOTExIDIuMjMyIDkuNzk1IDBsNTcuMTAyLTQ0LjIwOC4yNS0uNTRjNS4yMyAyLjM4IDExLjA1IDMuNzEgMTcuMTggMy43MSA0MS4wNDEgMCA3NC41NyAzMy4yNDkgNzQuNTcgNzQuNTd6IiBmaWxsPSIjZmY1OTUwIiBkYXRhLW9yaWdpbmFsPSIjZmZhYTY0IiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzIzLjQyOSAxNDYuMjU4YzQuMjQ3LjI0MiA3LjU3MiAzLjczMiA3LjU3MiA3Ljk4NnY0Ny44ODZjMCA0MS4yNy0yNS4yNSA3Ni42NC02MS4xNSA5MS41LTY0LjkxNyAyNi45NDctMTM2Ljg1LTIwLjkyNC0xMzYuODUtOTEuNXYtNDcuMTljMC00LjY4OSA0LjAxNi04LjM5NCA4LjY4Ni03Ljk3MSA0Ny45ODcgNC4zNTEgOTUuMjQyLTcuNzY3IDEzNC45MjMtMzQuNDk5IDQuNTEzLTMuMDQgMTAuNzI3LS43ODggMTIuMTUyIDQuNDY0IDQuOTM2IDE4LjE5NCAxOC4zOTkgMjguMzk3IDM0LjY2NyAyOS4zMjR6IiBmaWxsPSIjZmZlYmQyIiBkYXRhLW9yaWdpbmFsPSIjZmZlYmQyIiBzdHlsZT0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzUxLjEwMSAzNDEuNzYtOC44NiA3LjA1Yy05LjM5LTQuMjYtMTkuODItNi42NC0zMC44MS02LjY0LTIyLjgyOSAwLTQxLjQzLTE4LjQzNS00MS40My00MS4zNHYtNi44M2wtLjE1LS4zN2MzNS45LTE0Ljg2IDYxLjE1LTUwLjIzIDYxLjE1LTkxLjV2LTQ3Ljg4NmMwLTQuMjU0LTMuMzI1LTcuNzQ0LTcuNTcyLTcuOTg2LTE2LjE2OC0uOTIxLTI5LjY5OS0xMS4wMTMtMzQuNjY3LTI5LjMyMy0xLjQyNS01LjI1Mi03LjYzOS03LjUwNC0xMi4xNTItNC40NjQtMzkuNjU1IDI2LjcxNC04Ni45MDcgMzguODUyLTEzNC45MjMgMzQuNDk5LTQuNjctLjQyMy04LjY4NiAzLjI4Mi04LjY4NiA3Ljk3MXY0Ny4xOWMwIDQxLjI3IDI1LjI1IDc2LjY0IDYxLjE1IDkxLjVsLS4xNS4zN3Y2LjgzYzAgMjIuOTAxLTE4LjU5NiA0MS4zNC00MS40MyA0MS4zNC0xMC45OSAwLTIxLjQyIDIuMzgtMzAuODEgNi42NGwtOC44Ni03LjA1Yy00My4wMTEtMzQuMjcyLTUyLjU4OC05NS42OTUtMjIuMTYtMTQxLjM5IDExLjI2LTE2LjkgMTcuMjYtMzYuNzQgMTcuMjYtNTcuMDR2LTQzLjMzMWMwLTU1LjIyOCA0NC43NzItMTAwIDEwMC0xMDBoNDhjNTUuMjI4IDAgMTAwIDQ0Ljc3MiAxMDAgMTAwdjQzLjMzYzAgMjAuMjc2IDYgNDAuMTQgMTcuMjYgNTcuMDQgMzAuNTM5IDQ1Ljg2MiAyMC42ODggMTA3LjI3OC0yMi4xNiAxNDEuMzl6IiBmaWxsPSIjNDI0MzRkIiBkYXRhLW9yaWdpbmFsPSIjNDI0MzRkIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjcxLjEzMSAzMTAuNDJjLTI0LjYzNyAxMC4zMTMtNTEuNzEyIDExLjExMy03OC4yNiAwIDEuMzU2LTUuNjI2IDEuMTMtOS4yNyAxLjEzLTE2LjQybC4xNS0uMzdjMjQuMDgyIDkuOTk2IDUxLjU3MSAxMC4wMTYgNzUuNyAwbC4xNS4zN2MwIDcuMTUzLS4yMjYgMTAuNzk2IDEuMTMgMTYuNDJ6IiBmaWxsPSIjZmZkNmE2IiBkYXRhLW9yaWdpbmFsPSIjZmZkNmE2IiBzdHlsZT0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMzAxLjE3NiAxMC43NjJjMTAuMjEyIDUuMTggNS43NzQgMjAuNzY3LTUuNjI2IDE5LjY4OC0zLjE0My0uMjk4LTYuMzI5LS40NS05LjU1LS40NWgtNDhjLTU1LjIyOCAwLTEwMCA0NC43NzItMTAwIDEwMHYxMi4xNjhjMCA3LjE4NC01IDYuOTUyLTUgMTIuNzcyIDAgNTIuODIyLjIxNCA0OS40NzgtLjU2MSA1MS43NTctNy44NDUgMjMuMDc4LTE3LjI2NiAyNi40MTgtMjQuOTA5IDUxLjY3My00LjE2MyAxMy43NTYtNS4zOTMgMjcuOTIyLTMuOTUxIDQxLjY2OSAxLjE3NyAxMS4yMi0xNC40NDYgMTYuNTg3LTIwLjA3OSA0LjkwMS0xNi4xNDktMzMuNDU3LTEzLjYyLTczLjI0MyA3LjI0LTEwNC41NyAxMS4yNi0xNi45IDE3LjI2LTM2Ljc0IDE3LjI2LTU3LjA0di00My4zM2MwLTU1LjIyOCA0NC43NzItMTAwIDEwMC0xMDBoNDhjMTYuMjU3IDAgMzEuNjA3IDMuODc5IDQ1LjE3NiAxMC43NjJ6IiBmaWxsPSIjNGQ0ZTU5IiBkYXRhLW9yaWdpbmFsPSIjNGQ0ZTU5IiBzdHlsZT0iIj48L3BhdGg+PHBhdGggeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBkPSJtMjEzLjAyMiAyNjguNDQ5YzE0LjkzOSAxMCAzLjU1MyAzMy4xMy0xMy40MSAyNy4xNzctMzcuMjg2LTEzLjA4NC02Ni42MTEtNDcuODgzLTY2LjYxMS05My40OTd2LTQ3LjE5YzAtNC42OSA0LjAyLTguMzkgOC42OS03Ljk3IDMuODMyLjM0OCA4LjA0LjYyMiAxMi41ODEuNzYxIDguMjE5LjI1IDE0LjcyOSA3LjAzNyAxNC43MjkgMTUuMjZ2MjMuMTRjMCAzNC44MjYgMTcuNzU2IDY0LjczOCA0NC4wMjEgODIuMzE5eiIgZmlsbD0iI2ZmZjNlNCIgZGF0YS1vcmlnaW5hbD0iI2ZmZjNlNCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTE4Ni40OTQgMzUxLjc2OWM0Ljc0NiAzLjY3NCAyLjIzOCAxMS4zNzgtMy43NjQgMTEuNDAxLTQyLjMzMy4xNTgtNzQuNzI5IDM0LjE0OS03NC43MjkgNzQuNTd2MjYuMjZoLTIyYy00LjQxOCAwLTgtMy41ODItOC04di0zOS4yNmMwLTQxLjE2MyAzMy4zNy03NC41NyA3NC41Ny03NC41NyA2LjEzIDAgMTEuOTUtMS4zMyAxNy4xOC0zLjcxbC4yNS41NHoiIGZpbGw9IiNmZDg2N2YiIGRhdGEtb3JpZ2luYWw9IiNmZmJkN2IiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD48cGF0aCB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGQ9Im0yNzcuNTA3IDM1MS43NjljLTQuNzQ2IDMuNjc0LTIuMjM4IDExLjM3OCAzLjc2NCAxMS40MDEgNDIuMzMzLjE1OCA3NC43MjkgMzQuMTQ5IDc0LjcyOSA3NC41N3YyNi4yNmgyMmM0LjQxOCAwIDgtMy41ODIgOC04di0zOS4yNmMwLTQxLjE2My0zMy4zNy03NC41Ny03NC41Ny03NC41Ny02LjEzIDAtMTEuOTUtMS4zMy0xNy4xOC0zLjcxbC0uMjUuNTR6IiBmaWxsPSIjZmQ4NjdmIiBkYXRhLW9yaWdpbmFsPSIjZmFhMTU3IiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+PC9nPjwvc3ZnPg== alt="Robot" width="110" height="100"> 
+                                    </th>
+                                        </tr>
+                                        <tr>
+
+                                        <td>
+                                        <li>Commune de résidence : Solignat (dép. 63) </li>
+                                        <li>Niveau de formation : Baccalauréat ou équivalent </li>
+                                        <li>Nombre d'années d'expérience (pour le métier recherché) : 1</li>
+                                        <li>Age : 49 </li>
+                                        
+                                        <br>
+                                        
+                                        
+                                        <li>Métier recherché : Assistant / Assistante dentaire </li>
+                                        <li>Salaire minimum accepté : 10.0 euros bruts / H </li>
+                                        <li>Recherche un CDI : Oui</li>
+                                        <li>Recherche un temps partiel : Non</li>
+                                        <li>Rayon de recherche autour de l'habitation : 30 KM</li>
+                                        
+                                        <br>
+                                            <br>
+                                      </td>
+                                      </tr>
+                                
+                                     
+                                  
+                                        
+                                  </tr>
+                                </tbody>
+                              </table>
+                      
+                      <!-- Traitement -->                        
+                    <table style = "margin-bottom: 5px; margin-top: 20px; display: block; border-radius:6px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08)" width="580" cellpadding="0" cellspacing="0" border="0" align="center">
+
+                        <tbody>
+                          <tr>
+                            <td style="padding: 15px 35px 20px 35px;" colspan="1">
+                                
+                                <span style="font-size: 20px;  font-variant: small-caps; vertical-align: bottom">Missions pour le Focus Group : </span>
+                                
+                                <br>
+                                <br>
+                                
+                                 <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Base.html >Mission 1</a></li>
+                                        <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Explication.html >Mission 2</a></li>
+                                        <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Feedback.html >Mission 3</a></li>
+                                        <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Criteres.html >Mission 4</a></li>
+                                        <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Concurrence.html >Mission 5</a></li>
+                                        <li> <a style="text-decoration:underline; color:#ff5950" href= DE_2_Version_Chances.html >Mission 6</a></li>
+                                        
+                                        
+                                        <br>
+                                        
+                                        Cliquez <a style="text-decoration:underline; color:#ff5950" href= emploiretrouve_2.html >ici</a> pour connaître l'offre d'emploi sur laquelle a été embauchée Patricia.
+                                
+                              </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                            
+                              <td width="35">
+                        </tr>
+                      </tbody>
+                    </table>
+                    </td>
+                </tr>
+<!-- Footer -->
+                <tr>
+                  <tr>
+                    <td width="650" height="60" bgcolor="#ffffff">
+                  </tr>
+                  <tr>
+                    <td width="650">
+                      <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#2b2e30">
+                        <tbody>
+                          <tr>
+                            <td colspan="5" height="15">
+                          </tr>
+                          <tr>
+                            <td width="35">
+                              <td width="300" valign="middle">
+                                <p align="left" style="color:#fff; font-size: 0.7em;">© 2018 Pôle emploi. Tous droits réservés.</p>
+                              </td>
+                              <td width="35">
+                          </tr>
+                          <tr>
+                            <td colspan="5" height="15">
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td width="650">
+                      <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#3e4249">
+                        <tbody>
+                          <tr>
+                            <td colspan="5" height="30">
+                          </tr>
+                          <tr>
+                            <td width="35">
+                              <td width="580" valign="middle">
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Ce courriel vous est envoyé automatiquement, merci de ne pas utiliser la fonction &quot;répondre à l'expéditeur&quot;.</p>
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Une question&nbsp;?
+                                  <a href="" target="_blank" style="color:#fff;">Consultez notre FAQ</a>
+                                </p>
+                                <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Vous disposez d'un droit d'accès et de rectification aux informations qui vous concernent auprès de Pôle emploi conformément à la loi du 6 janvier 1978, modifiée, relative à l'informatique, aux fichiers et aux libertés.</p>
+                              </td>
+                              <td width="35">
+                          </tr>
+                          <tr>
+                            <td colspan="5" height="30">
+                          </tr>
+                        </tbody>
+                      </table>
+                      </td>
+                  </tr>
+              </tbody>
+            </table>
+            </td>
+            </tr>
+      </tbody>
+    </table>
+  </body>
+
+</html>

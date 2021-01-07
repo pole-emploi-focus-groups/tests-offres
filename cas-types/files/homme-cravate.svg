@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 168 108" style="enable-background:new 0 0 168 108;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FC766A;fill-opacity:0.25;}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st3{mask:url(#mask-2_1_);fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-6_1_);}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-24_1_);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:#7A87A1;}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:#A3B0CA;}
+	.st7{fill-rule:evenodd;clip-rule:evenodd;fill:#5A6986;}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-51_1_);}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Fill-53_1_);}
+</style>
+<g id="ico-flat-gradient---homme-cravatte" transform="translate(40.000000, 30.000000)">
+	<g>
+		<g id="Group-10" transform="translate(27.000000, 0.847350)">
+			<g id="Path">
+				<path class="st0" d="M28.3,77C12.6,76-0.9,69.3-15,56.6c-7.6-6.8-19.3-21.3-22.5-31.3c-6.7-21,2.7-44.6,27.2-47.3
+					C5.3-22.1,9.6-6.6,27.2-6.6S93.3-51.5,99-17S94.7,72.9,28.3,77z"/>
+			</g>
+			<defs>
+				<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="-42" y="35.5" width="129.4" height="56.2">
+					<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+				</filter>
+			</defs>
+			<mask maskUnits="userSpaceOnUse" x="-42" y="35.5" width="129.4" height="56.2" id="mask-2_1_">
+				<g class="st1">
+					<path id="path-1_1_" class="st2" d="M28.3,77C12.6,76-0.9,69.3-15,56.6c-7.6-6.8-19.3-21.3-22.5-31.3
+						c-6.7-21,2.7-44.6,27.2-47.3C5.3-22.1,9.6-6.6,27.2-6.6S93.3-51.5,99-17S94.7,72.9,28.3,77z"/>
+				</g>
+			</mask>
+			
+				<linearGradient id="Fill-6_1_" gradientUnits="userSpaceOnUse" x1="-286.6212" y1="418.5332" x2="-286.6212" y2="418.2683" gradientTransform="matrix(258 0 0 -212 73971 88764.5156)">
+				<stop  offset="0" style="stop-color:#55637F"/>
+				<stop  offset="1" style="stop-color:#6D7EA0"/>
+			</linearGradient>
+			<path id="Fill-6_2_" class="st3" d="M87.4,71.1L68.5,47.8l0,0c-0.6-0.7-1.3-1.4-2-2c-1.6-1.4-3.5-2.3-5.4-2.9
+				c-0.3-0.1-0.6-0.2-0.9-0.2c-0.1,0-0.2-0.1-0.3-0.1c0,0,0,0,0,0l-39.3-6.9c0,0-0.1,0-0.1,0l-0.3-0.1c-0.4-0.1-0.7-0.1-1.1-0.1
+				c-0.5,0-1-0.1-1.5,0c-1,0-1.9,0.1-2.8,0.3l0,0l-47.2,10.3l0,0c-1.7,0.4-3.3,1.2-4.6,2.4c-0.5,0.5-0.9,0.9-1.3,1.5l0,0l-2.5,3.5
+				l-1,3.8c0.4,0.8,0.8,1.6,1,2.4l3.7,2.8l5.6,4.1l5.4-0.6l32-0.6L1.7,83.2L28,91.6C28,91.6,87.4,71.1,87.4,71.1"/>
+		</g>
+		
+			<linearGradient id="Fill-24_1_" gradientUnits="userSpaceOnUse" x1="-250.402" y1="405.7512" x2="-250.8344" y2="405.1156" gradientTransform="matrix(22 0 0 -23 5580 9361)">
+			<stop  offset="0" style="stop-color:#F8A58D"/>
+			<stop  offset="1" style="stop-color:#FF7162"/>
+		</linearGradient>
+		<polyline id="Fill-24" class="st4" points="77.5,42 59,38.8 62.5,19 81,22.2 77.5,42 		"/>
+		<path id="Fill-35" class="st2" d="M61.7,77.3c1.6-0.2,3.5-0.4,5.8-0.8c2.2-0.4,3.4-0.6,3.4-0.7l7.5-17.5L81,42.9L59,39L61.7,77.3z
+			"/>
+		<path id="Fill-45" class="st5" d="M72,43.7c-0.7,3-1.7,5.9-3.5,8.5c-2.1,3-4.9,5.5-8.2,7.2c-6.7,3.4-14.6,3.4-21.2,0
+			c-3.8-1.9-7.4-4.5-11-6.7c-3.3-2.2-7.5-4.1-11.4-5.4c-5.5-1.9-11.2-3.1-17-3.3c-5.6-0.3-11.3,0.4-16.9,0.8
+			c-4.7,0.3-9.3,0.6-14,0.9l-8.9-8.8l8.9-8.8c2,0.1,4,0.3,6,0.4c4.7,0.3,9.4,0.6,14,0.9c4.6,0.3,9.1,0.6,13.6,1.6
+			C12,32.8,20.8,36.6,28.7,42c3.1,2.1,5.9,4.5,8.7,6.9c3.4,2.8,6.6,5.8,11,6.8c5,1.2,10.2,0,14.4-2.9c3.5-2.4,5.5-5.8,7-9.7L72,43.7
+			"/>
+		<path id="Fill-46" class="st6" d="M9.5,36c-0.8-0.2-1.6-0.4-2.5-0.6L7.5,34c0.8,0.2,1.7,0.4,2.5,0.6L9.5,36"/>
+		<path id="Fill-47" class="st6" d="M5.6,35c-0.9-0.2-1.9-0.5-2.8-0.7c-4.2-0.9-8.6-1.2-13.3-1.6L-28,31.5l0.1-1.5l17.5,1.2
+			c4.8,0.3,9.2,0.7,13.5,1.6C4.1,33,5,33.3,6,33.5L5.6,35"/>
+		<path id="Fill-48" class="st7" d="M88.3,4.3L85.8,5L81-12.9l2.6-0.7c4.8-1.4,9.8,1.6,11.1,6.5C96-2.2,93.2,2.9,88.3,4.3"/>
+		<path id="Fill-49" class="st7" d="M72,25.9l-6.6,1.8c-3.7,1-7.4-1.2-8.4-4.8l-2-7.3L68.2,12L72,25.9"/>
+		
+			<linearGradient id="Fill-51_1_" gradientUnits="userSpaceOnUse" x1="-254.1407" y1="413.015" x2="-254.4266" y2="412.3794" gradientTransform="matrix(35 0 0 -45 8973.9961 18593)">
+			<stop  offset="0" style="stop-color:#F8A58D"/>
+			<stop  offset="1" style="stop-color:#FF7162"/>
+		</linearGradient>
+		<path id="Fill-51" class="st8" d="M90.1,27.7L67.5,34L60.5,7.9c-2.1-8,2.5-16.2,10.2-18.3c7.5-2.1,15.3,2.2,17.7,9.8L94.7,19
+			C95.8,22.7,93.8,26.7,90.1,27.7"/>
+		<path id="Fill-52" class="st7" d="M61.6-10.5l1.9-0.5L70,13.9L55.5,18l-3-11.7C50.6-0.9,54.7-8.5,61.6-10.5"/>
+		
+			<linearGradient id="Fill-53_1_" gradientUnits="userSpaceOnUse" x1="-235.8657" y1="377.8902" x2="-236.3383" y2="377.388" gradientTransform="matrix(9 0 0 -8 2186.002 3037.9983)">
+			<stop  offset="0" style="stop-color:#F8A58D"/>
+			<stop  offset="1" style="stop-color:#FF7162"/>
+		</linearGradient>
+		<path id="Fill-53" class="st9" d="M63.1,18.9l3.9-1.1l-1.1-3.9c-0.6-2.1-2.8-3.4-5-2.8c-2.2,0.6-3.4,2.8-2.8,4.9
+			C58.7,18.2,60.9,19.4,63.1,18.9"/>
+		<path id="Fill-54" class="st7" d="M90-4.4l-14.8,4c-6.1,1.6-12.3-1.9-14-7.9c-0.8-2.8,0.9-5.8,3.8-6.5c2.9-0.8,5.9,0.9,6.6,3.7
+			c0.1,0.3,0.4,0.5,0.7,0.4l14.8-4L90-4.4"/>
+		<path id="Fill-55" class="st7" d="M83.1-8.2l-7.3,2C72.9-5.4,70-7.1,69.2-10c-0.8-2.9,0.9-5.9,3.8-6.7l7.3-2
+			c2.8-0.8,5.8,0.9,6.6,3.8C87.6-12,85.9-9,83.1-8.2"/>
+		<path id="Fill-56" class="st7" d="M96.7,24.8c1,3-0.7,6.1-3.7,7l-10.4,2.9c-5.8,1.6-11.7-1.8-13.3-7.7L66,14.6l3.9-1.1
+			c0.7,2.4,3.1,3.9,5.5,3.2L92.6,12L96.7,24.8"/>
+		<path id="Fill-66" class="st2" d="M84,18.9c0.5,2.2,2.7,3.5,4.9,2.9c2.2-0.5,3.5-2.7,3-4.9L84,18.9"/>
+	</g>
+</g>
+</svg>
