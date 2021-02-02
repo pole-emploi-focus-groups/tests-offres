@@ -1,532 +1,462 @@
 <meta charset="UTF-8">
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    <title>P&ocirc;le-emploi</title>
-    <script src="https://kit.fontawesome.com/608889706f.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scale=yes, maximum-scale=5.0">
-    <style type="text/css">
-        /* Fonts and Content */
-        
-        body,
-        td {
-            font-family: Arial, Helvetica, Geneva, sans-serif;
-            font-size: 14px;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            -webkit-text-size-adjust: none;
-            -ms-text-size-adjust: none;
-        }
-        /* Based on The MailChimp Reset INLINE: Yes. */
-        /* Client-specific Styles */
-        
-        #outlook a {
-            padding: 0;
-        }
-        /* Force Outlook to provide a "view in browser" menu link. */
-        
-        body {
-            width: 100% !important;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
-        
-        .ExternalClass {
-            width: 100%;
-        }
-        /* Force Hotmail to display emails at full width */
-        
-        .ExternalClass,
-        .ExternalClass p,
-        .ExternalClass span,
-        .ExternalClass font,
-        .ExternalClass td,
-        .ExternalClass div {
-            line-height: 100%;
-        }
-        /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
-        
-        #backgroundTable {
-            margin: 0;
-            padding: 0;
-            width: 100% !important;
-            line-height: 100% !important;
-        }
-        /* End reset */
-        /* Some sensible defaults for images
-         Bring inline: Yes. */
-        
-        img {
-            outline: none;
-            text-decoration: none;
-            -ms-interpolation-mode: bicubic;
-        }
-        
-        a img {
-            border: none;
-        }
-        
-        .image_fix {
-            display: block;
-        }
-        /* Yahoo paragraph fix
-         Bring inline: Yes. */
-        
-        p {
-            margin: 1em 0;
-        }
-        /* Hotmail header color reset
-         Bring inline: Yes. */
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            color: #4a4f4e !important;
-        }
-        
-        h1 a,
-        h2 a,
-        h3 a,
-        h4 a,
-        h5 a,
-        h6 a {
-            color: blue !important;
-        }
-        
-        h1 a:active,
-        h2 a:active,
-        h3 a:active,
-        h4 a:active,
-        h5 a:active,
-        h6 a:active {
-            color: red !important;
-            /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
-        }
-        
-        h1 a:visited,
-        h2 a:visited,
-        h3 a:visited,
-        h4 a:visited,
-        h5 a:visited,
-        h6 a:visited {
-            color: purple !important;
-            /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
-        }
-        /* Outlook 07, 10 Padding issue fix
-         Bring inline: No.*/
-        
-        table td {
-            border-collapse: collapse;
-        }
-        /* Remove spacing around Outlook 07, 10 tables
-         Bring inline: Yes */
-        
-        table {
-            border-collapse: collapse;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-        }
-        /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
-         Bring inline: Yes. */
-        
-        a {
-            color: orange;
-        }
-        /***************************************************
-         ****************************************************
-         MOBILE TARGETING
-         ****************************************************
-         ***************************************************/
-        
-        @media only screen and (max-device-width: 480px) {
-            /* Part one of controlling phone number linking for mobile. */
-            a[href^="tel"],
-            a[href^="sms"] {
-                text-decoration: none;
-                color: blue;
-                /* or whatever your want */
-                pointer-events: none;
-                cursor: default;
-            }
-            .mobile_link a[href^="tel"],
-            .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
-        /* More Specific Targeting */
-        
-        @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-            /* You guessed it, ipad (tablets, smaller screens, etc) */
-            /* repeating for the ipad */
-            a[href^="tel"],
-            a[href^="sms"] {
-                text-decoration: none;
-                color: blue;
-                /* or whatever your want */
-                pointer-events: none;
-                cursor: default;
-            }
-            .mobile_link a[href^="tel"],
-            .mobile_link a[href^="sms"] {
-                text-decoration: default;
-                color: orange !important;
-                pointer-events: auto;
-                cursor: default;
-            }
-        }
-        
-        @media only screen and (-webkit-min-device-pixel-ratio: 2) {
-            /* Put your iPhone 4g styles in here */
-        }
-        /* Android targeting */
-        
-        @media only screen and (-webkit-device-pixel-ratio:.75) {
-            /* Put CSS for low density (ldpi) Android layouts in here */
-        }
-        
-        @media only screen and (-webkit-device-pixel-ratio:1) {
-            /* Put CSS for medium density (mdpi) Android layouts in here */
-        }
-        
-        @media only screen and (-webkit-device-pixel-ratio:1.5) {
-            /* Put CSS for high density (hdpi) Android layouts in here */
-        }
-        /* end Android targeting */
-    </style>
-    <style type="text/css"></style>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>P&ocirc;le-emploi</title>
+	<script src="https://kit.fontawesome.com/608889706f.js">
+	</script>
+	<meta content="width=device-width, initial-scale=1.0, user-scale=yes, maximum-scale=5.0" name="viewport">
+	<style type="text/css">
+	       /* Fonts and Content */
+	       
+	       body,
+	       td {
+	           font-family: Arial, Helvetica, Geneva, sans-serif;
+	           font-size: 14px;
+	       }
+	       
+	       body {
+	           margin: 0;
+	           padding: 0;
+	           -webkit-text-size-adjust: none;
+	           -ms-text-size-adjust: none;
+	       }
+	       /* Based on The MailChimp Reset INLINE: Yes. */
+	       /* Client-specific Styles */
+	       
+	       #outlook a {
+	           padding: 0;
+	       }
+	       /* Force Outlook to provide a "view in browser" menu link. */
+	       
+	       body {
+	           width: 100% !important;
+	           -webkit-text-size-adjust: 100%;
+	           -ms-text-size-adjust: 100%;
+	           margin: 0;
+	           padding: 0;
+	       }
+	       /* Prevent Webkit and Windows Mobile platforms from changing default font sizes.*/
+	       
+	       .ExternalClass {
+	           width: 100%;
+	       }
+	       /* Force Hotmail to display emails at full width */
+	       
+	       .ExternalClass,
+	       .ExternalClass p,
+	       .ExternalClass span,
+	       .ExternalClass font,
+	       .ExternalClass td,
+	       .ExternalClass div {
+	           line-height: 100%;
+	       }
+	       /* Forces Hotmail to display normal line spacing.  More on that: http://www.emailonacid.com/forum/viewthread/43/ */
+	       
+	       #backgroundTable {
+	           margin: 0;
+	           padding: 0;
+	           width: 100% !important;
+	           line-height: 100% !important;
+	       }
+	       /* End reset */
+	       /* Some sensible defaults for images
+	        Bring inline: Yes. */
+	       
+	       img {
+	           outline: none;
+	           text-decoration: none;
+	           -ms-interpolation-mode: bicubic;
+	       }
+	       
+	       a img {
+	           border: none;
+	       }
+	       
+	       .image_fix {
+	           display: block;
+	       }
+	       /* Yahoo paragraph fix
+	        Bring inline: Yes. */
+	       
+	       p {
+	           margin: 1em 0;
+	       }
+	       /* Hotmail header color reset
+	        Bring inline: Yes. */
+	       
+	       h1,
+	       h2,
+	       h3,
+	       h4,
+	       h5,
+	       h6 {
+	           color: #4a4f4e !important;
+	       }
+	       
+	       h1 a,
+	       h2 a,
+	       h3 a,
+	       h4 a,
+	       h5 a,
+	       h6 a {
+	           color: blue !important;
+	       }
+	       
+	       h1 a:active,
+	       h2 a:active,
+	       h3 a:active,
+	       h4 a:active,
+	       h5 a:active,
+	       h6 a:active {
+	           color: red !important;
+	           /* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+	       }
+	       
+	       h1 a:visited,
+	       h2 a:visited,
+	       h3 a:visited,
+	       h4 a:visited,
+	       h5 a:visited,
+	       h6 a:visited {
+	           color: purple !important;
+	           /* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+	       }
+	       /* Outlook 07, 10 Padding issue fix
+	        Bring inline: No.*/
+	       
+	       table td {
+	           border-collapse: collapse;
+	       }
+	       /* Remove spacing around Outlook 07, 10 tables
+	        Bring inline: Yes */
+	       
+	       table {
+	           border-collapse: collapse;
+	           mso-table-lspace: 0pt;
+	           mso-table-rspace: 0pt;
+	       }
+	       /* Styling your links has become much simpler with the new Yahoo.  In fact, it falls in line with the main credo of styling in email and make sure to bring your styles inline.  Your link colors will be uniform across clients when brought inline.
+	        Bring inline: Yes. */
+	       
+	       a {
+	           color: orange;
+	       }
+	       /***************************************************
+	        ****************************************************
+	        MOBILE TARGETING
+	        ****************************************************
+	        ***************************************************/
+	       
+	       @media only screen and (max-device-width: 480px) {
+	           /* Part one of controlling phone number linking for mobile. */
+	           a[href^="tel"],
+	           a[href^="sms"] {
+	               text-decoration: none;
+	               color: blue;
+	               /* or whatever your want */
+	               pointer-events: none;
+	               cursor: default;
+	           }
+	           .mobile_link a[href^="tel"],
+	           .mobile_link a[href^="sms"] {
+	               text-decoration: default;
+	               color: orange !important;
+	               pointer-events: auto;
+	               cursor: default;
+	           }
+	       }
+	       /* More Specific Targeting */
+	       
+	       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+	           /* You guessed it, ipad (tablets, smaller screens, etc) */
+	           /* repeating for the ipad */
+	           a[href^="tel"],
+	           a[href^="sms"] {
+	               text-decoration: none;
+	               color: blue;
+	               /* or whatever your want */
+	               pointer-events: none;
+	               cursor: default;
+	           }
+	           .mobile_link a[href^="tel"],
+	           .mobile_link a[href^="sms"] {
+	               text-decoration: default;
+	               color: orange !important;
+	               pointer-events: auto;
+	               cursor: default;
+	           }
+	       }
+	       
+	       @media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	           /* Put your iPhone 4g styles in here */
+	       }
+	       /* Android targeting */
+	       
+	       @media only screen and (-webkit-device-pixel-ratio:.75) {
+	           /* Put CSS for low density (ldpi) Android layouts in here */
+	       }
+	       
+	       @media only screen and (-webkit-device-pixel-ratio:1) {
+	           /* Put CSS for medium density (mdpi) Android layouts in here */
+	       }
+	       
+	       @media only screen and (-webkit-device-pixel-ratio:1.5) {
+	           /* Put CSS for high density (hdpi) Android layouts in here */
+	       }
+	       /* end Android targeting */
+	</style>
+	<style type="text/css">
+	</style>
 </head>
-
-
-<body style="margin: 0;" bgcolor="#e0e0e0">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tbody>
-            <tr>
-                <td align="center" bgcolor="#e0e0e0">
-                    <table cellpadding="0" cellspacing="0" border="0">
-                        <tbody>
-
-                            <!-- Header -->
-                            <tr>
-                                <td width="650">
-                                    <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-                                        <tbody>
-                                            <tr>
-                                                <td width="650" valign="middle" align="left">
-                                                    <a href="https://entreprise.pole-emploi.fr/accueil/homepage" title="Accès &agrave; la page d'accueil entreprise">
-                                                        <img style="display: block;" src="https://entreprise.pole-emploi.fr/compte/statique/mail/img/pe-connect-header.png" alt="P&ocirc;le emploi connect - Acc&eacute;dez &agrave; tous vos services recruteurs." width="650" height="219">
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-
-                            <!-- contenu -->
-                            <tr>
-                                <td width="650" bgcolor="#ffffff" style="padding-top: 5px;">
-                                    <table width="650" cellpadding="0" cellspacing="0" border="0">
-                                        <tbody>
-                                            <tr>
-                                                <td width="35">
-                                                    <td width="580">
-                                                        <table width="580" cellpadding="0" cellspacing="0" border="0">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td width="580" height="0" bgcolor="#eeeeee">
-                                                                </tr>
-                                                                <tr>
-
-                                                                    <td width="580">
-                                                                        <div align="left" style="padding-top:15px; padding-bottom:15px;">
-                                                                            <p style="color: #666666;margin:1em 0;">Bonjour Philippe,</p>
-                                                                            <p style="color: #666666;margin:1em 0;"><b>Voici 5 profils de candidats qui pourraient convenir &agrave; votre offre d'emploi</b> <i> &#8470; <a style="text-decoration: underline; color: #ff5950" href="096PXCR_detailoffre.html">096PXCR</a></i>.
-                                                                                <br> </p>
-                                                                            <div style="border-top-width: 0px; border-top-style: solid; padding-top: 10px; padding-bottom: 10px;">
-                                                                            <p style="color: #666666;margin:0.5em 0;">Les <b>comp&eacute;tences en lien avec votre offre</b> sont affich&eacute;es selon ce code couleur : <br> </p>                            
-                                                            <i><i class="fas fa-square" style="color: #40a6cc ;"></i> Savoirs-faire <i class="fas fa-square" style="color: #12baa1 ;"></i> Savoirs-&ecirc;tre professionnels <i class="fas fa-square" style="color: #867eba ;"></i> Permis <i class="fas fa-square" style="color: #c192c0 ;"></i> Langues
-                                                                                </i>
-                                                                            </div>
-                                                                            <p style="color: #666666;margin:1em 0;">
-                                                                                <!-- CV 1 -->
-                                                                                <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                                                                    <tr>
-                                                                                        <td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"> </td>
-                                                                                    </tr>
-                                                                                     <tr>
-                                              <th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
-                                              Agent de propreté
-                                              </th>
-                                              <th rowspan = "5" width="150"style= "text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;">
-                                                  <!--
+<body bgcolor="#E0E0E0" style="margin: 0;">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center" bgcolor="#E0E0E0">
+					<table border="0" cellpadding="0" cellspacing="0">
+						<tbody>
+							<!-- Header -->
+							<tr>
+								<td width="650">
+									<table bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="650">
+										<tbody>
+											<tr>
+												<td align="left" valign="middle" width="650"><a href="https://entreprise.pole-emploi.fr/accueil/homepage" title="Accès &agrave; la page d'accueil entreprise"><img alt="P&ocirc;le emploi connect - Acc&eacute;dez &agrave; tous vos services recruteurs." height="219" src="https://entreprise.pole-emploi.fr/compte/statique/mail/img/pe-connect-header.png" style="display: block;" width="650"></a></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr><!-- contenu -->
+							<tr>
+								<td bgcolor="#FFFFFF" style="padding-top: 5px;" width="650">
+									<table border="0" cellpadding="0" cellspacing="0" width="650">
+										<tbody>
+											<tr>
+												<td width="35"></td>
+												<td width="580">
+													<table border="0" cellpadding="0" cellspacing="0" width="580">
+														<tbody>
+															<tr>
+																<td bgcolor="#EEEEEE" height="0" width="580"></td>
+															</tr>
+															<tr>
+																<td width="580">
+																	<div align="left" style="padding-top:15px; padding-bottom:15px;">
+																		<p style="color: #666666;margin:1em 0;">Bonjour Philippe,</p>
+																		<p style="color: #666666;margin:1em 0;"><b>Voici 5 profils de candidats qui pourraient convenir &agrave; votre offre d'emploi</b> <i>&#8470; <a href="096PXCR_detailoffre.html" style="text-decoration: underline; color: #ff5950">096PXCR</a></i>.<br></p>
+																		<div style="border-top-width: 0px; border-top-style: solid; padding-top: 10px; padding-bottom: 10px;">
+																			<p style="color: #666666;margin:0.5em 0;">Les <b>comp&eacute;tences en lien avec votre offre</b> sont affich&eacute;es selon ce code couleur :<br></p><i><i class="fas fa-square" style="color: #40a6cc ;"></i> Savoirs-faire <i class="fas fa-square" style="color: #12baa1 ;"></i> Savoirs-&ecirc;tre professionnels <i class="fas fa-square" style="color: #867eba ;"></i> Permis <i class="fas fa-square" style="color: #c192c0 ;"></i> Langues</i>
+																		</div>
+																		<p style="color: #666666;margin:1em 0;"><!-- CV 1 --></p>
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																			<tr>
+																				<th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">Agent de propreté</th>
+																				<th rowspan="5" style="text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;" width="150"><!--
                                                             <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;"  >
                                                     Des offres similaires à la votre sont susceptibles d'intéresser ce candidat 
                                                     </a>
-                                                    -->
-                                              </th>
-                                            </tr>
-                                                                                        <td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">			Disponibilité immédiate &bull; Profil mis &agrave; jour le 12/01/2021 </span></td>
-  
-                                                                                    <tr>
-                                                                                        <td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">	 &#171; expériences diverses dans le métier &#187; </span></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td height="20" style= "padding-bottom: 10px;">
-                                                                                            <li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir des locaux</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Caractéristiques des produits d’entretien
+                                                    --></th>
+																			</tr>
+																			<tr>
+																				<td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Disponibilité immédiate &bull; Profil mis &agrave; jour le 12/01/2021</span></td>
+																			</tr>
+																			<tr>
+																				<td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">&#171; expériences diverses dans le métier &#187;</span></td>
+																			</tr>
+																			<tr>
+																				<td height="20" style="padding-bottom: 10px;"><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir des locaux</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Caractéristiques des produits d’entretien
 
 </span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #c192c0; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">
-</span></li><br>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- CV 2 -->
-                                                                                <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                                                                    <tr>
-                                                                                        <td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"> </td>
-                                                                                    </tr>
-                                            <tr>
-                                              <th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
-                                              Agent d'entretien en bureaux
-                                              </th>
-                                              <th rowspan = "5" width="150"style= "text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;">
-                                                            <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;" >
-                                                    Des offres similaires à la votre sont susceptibles d'intéresser ce candidat
-                                                    </a>
-                                              </th>
-                                            </tr>
-                                                               
-                                                                                    <tr>
-                                                                                        <td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">			Disponibilité immédiate &bull; Profil mis &agrave; jour le 01/02/2021 </span></td>
-                                
-
-                                                                                    <tr>
-                                                                                        <td valign="middle" height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">	 &#171; Mettre mes capacités relationnelles et mes compétences en entretien global d'une structure de nettoyage.  &#187; </span></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td height="20" style= "padding-bottom: 10px;">
-                                                                                            <li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir une surface, un sol</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">
+</span></li><br></td>
+																			</tr>
+																		</table><!-- CV 2 -->
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																			<tr>
+																				<th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">Agent d'entretien en bureaux</th>
+																				<th rowspan="5" style="text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;" width="150"><a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;">Des offres similaires à la votre sont susceptibles d'intéresser ce candidat</a></th>
+																			</tr>
+																			<tr>
+																				<td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Disponibilité immédiate &bull; Profil mis &agrave; jour le 01/02/2021</span></td>
+																			</tr>
+																			<tr>
+																				<td height="50" valign="middle" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">&#171; Mettre mes capacités relationnelles et mes compétences en entretien global d'une structure de nettoyage.  &#187;</span></td>
+																			</tr>
+																			<tr>
+																				<td height="20" style="padding-bottom: 10px;"><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir une surface, un sol</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">
 Entretenir des locaux
-</span></li><li style = "display:inline flex; list-style: none; margin: 3px 0;"><span style="background: #12baa1; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Autonomie</span></li><li style = "display:inline flex; list-style: none; margin: 3px 0;"><span style="background: #12baa1; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Travail en équipe</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #c192c0; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Français (intermédiaire)</span></li><br>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- CV 3 -->
-                                                                                <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                                                                    <tr>
-                                                                                        <td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"> </td>
-                                                                                    </tr>
- <tr>
-                                              <th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
-                                              ouvrier d'espaces verts
-
-                                              </th>
-                                              <th rowspan = "5" width="150"style= "text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;">
-                                                   <!--         <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;"  >
+</span></li><li style = "display:inline flex; list-style: none; margin: 3px 0;"><span style="background: #12baa1; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Autonomie</span></li><li style = "display:inline flex; list-style: none; margin: 3px 0;"><span style="background: #12baa1; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Travail en équipe</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #c192c0; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Français (intermédiaire)</span></li><br></td>
+																			</tr>
+																		</table><!-- CV 3 -->
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																			<tr>
+																				<th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">ouvrier d'espaces verts
+</th>
+																				<th rowspan="5" style="text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;" width="150"><!--         <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;"  >
                                                     Des offres similaires à la votre sont susceptibles d'intéresser ce candidat 
                                                     </a>
-                                                -->
-                                              </th>
-                                            </tr>
-                                                                                    <tr>
-                                                                                        <td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">			Disponibilité immédiate &bull; Profil mis &agrave; jour le 01/02/2021 </span></td>
-                                                                                
-                                                                                    <tr>
-                                                                                        <td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">	 &#171; Rigoureux, volontaire, ponctuel &#187; </span></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td height="20" style= "padding-bottom: 10px;">
-                                                                                            <li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Nettoyer et entretenir les équipements</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Règles et consignes de sécurité</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #867eba; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Permis B</span></li><br>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- CV 4 -->
-                                                                                <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                                                                    <tr>
-                                                                                        <td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"> </td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                              <th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
-                                              Employée polyvalente de restauration
-                                              </th>
-                                              <th rowspan = "5" width="150" style= "text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;">
+                                                --></th>
+																			</tr>
+																			<tr>
+																				<td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Disponibilité immédiate &bull; Profil mis &agrave; jour le 01/02/2021</span></td>
+																			</tr>
+																			<tr>
+																				<td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">&#171; Rigoureux, volontaire, ponctuel &#187;</span></td>
+																			</tr>
+																			<tr>
+																				<td height="20" style="padding-bottom: 10px;"><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Nettoyer et entretenir les équipements</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Règles et consignes de sécurité</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #867eba; font-size: 12px;color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Permis B</span></li><br></td>
+																			</tr>
+																		</table><!-- CV 4 -->
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																			<tr>
+																				<th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">Employée polyvalente de restauration</th>
+																				<th rowspan="5" style="text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;" width="150"><a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;">Des offres similaires à la votre sont susceptibles d'intéresser ce candidat</a></th>
+																			</tr>
+																			<tr>
+																				<td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Disponibilité immédiate &bull; Profil mis &agrave; jour le 12/01/2021</span></td>
+																			</tr>
+																			<tr>
+																				<td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">&#171; Une forte expérience dans le nettoyage et la restauration me permettra d'intégrer votre établissement et mettre à votre service mes compétences &#187;</span></td>
+																			</tr>
+																			<tr>
+																				<td height="20" style="padding-bottom: 10px;"><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir des locaux</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Caractéristiques des produits d’entretien</span></li><br></td>
+																			</tr>
+																		</table><!-- CV 5 -->
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																			<tr>
+																				<th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">Agent d'entretien
+</th>
+																				<th rowspan="5" style="text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;" width="150"><!--
                                                             <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;"  >
                                                     Des offres similaires à la votre sont susceptibles d'intéresser ce candidat 
                                                     </a>
-                                              </th>
-                                            </tr>
-                                                                                    <tr>
-                                                                                        <td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">			Disponibilité immédiate &bull; Profil mis &agrave; jour le 12/01/2021 </span></td>
-                                                                               
-                                                                                    <tr>
-                                                                                        <td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">	 &#171; Une forte expérience dans le nettoyage et la restauration me permettra d'intégrer votre établissement et mettre à votre service mes compétences &#187; </span></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td height="20" style= "padding-bottom: 10px;">
-                                                                                            <li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Entretenir des locaux</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Procédures de nettoyage et de désinfection</span></li><li style = "display:inline flex;list-style: none; margin: 3px 0;"><span style="background: #40a6cc; font-size: 12px; color: #fff; border-color: transparent; padding: 0 9px !important;border-radius: 3px;margin-right: 5px;">Caractéristiques des produits d’entretien</span></li><br>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                                <!-- CV 5 -->
-                                                                                <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                                                                    <tr>
-                                                                                        <td colspan="3" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"> </td>
-                                                                                    </tr>
-                                                                                     <tr>
-                                              <th style="font-size: 16px; color: #ff5950; font-weight: bold; font-family: Arial, Helvetica, Geneva, sans serif; text-align: left;">
-                                              Agent d'entretien
-
-                                              </th>
-                                              <th rowspan = "5" width="150"style= "text-align:center;vertical-align:top;overflow:hidden;padding: 25px 5px 10px 15px;">
-                                                  <!--
-                                                            <a style="background: transparent; color: #545252; border:1px solid #545252; padding: 7px 1px !important;border-radius: 0px; margin-left: 10px; font-size: 12px;text-decoration:none;display:inline-block;"  >
-                                                    Des offres similaires à la votre sont susceptibles d'intéresser ce candidat 
-                                                    </a>
-                                                    -->
-                                              </th>
-                                            </tr>
-                                                                                    <tr>
-                                                                                        <td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">			Disponibilité immédiate &bull; Profil mis &agrave; jour le 10/01/2021 </span></td>
-                                                                               
-                                                                                    <tr>
-                                                                                        <td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">	 &#171; Forte de plusieurs missions en tant qu'agent d'entretien, je suis à la recherche d'un poste durable. &#187; </span></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td height="20" style= "padding-bottom: 10px;">
-                                                                                            <span style = "font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif"><br> Comp&eacute;tences non renseignées </span>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </table>
-                                                                            </p>
-                                                                        
-                                                                        <table style="padding-bottom: 10px; padding-top: 10px" border="0" width="600" cellpadding="0" cellspacing="0">
-                                            <tr>
-                                              <td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px">
-                                              </td>
-                                            </tr>
-                          </table>
-  <!-- Traitement -->                        
-                         <table style = "text-align: center; horizontal-align: middle; margin-bottom: 20px; margin-top: 20px; display: block; border-radius:6px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08)" width="580" cellpadding="0" cellspacing="0" align="center" border="0">
-                        <tbody>
-                          <tr>
-                            <td style="padding: 15px 35px 10px 35px;" colspan="2">
-                                <span>   
-                                Cliquez ci-dessous pour en savoir plus sur ces profils et contacter les candidats :
-                        
-                                </span>
-                                    
-                                    <table width="100%" cellspacing="0" cellpadding="0">
-                                      <tr>
-                                          <td>
-                                              
-                                        <table style="border-spacing:0;margin:15px auto" class="tg"><tbody><tr><td style="border-color:#000000;border-style:solid;border-width:0px;font-family:Arial, border-radius:6px;sans-serif;font-size:14px;text-decoration: none;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href=https://entreprise.pole-emploi.fr/recherche-profil/rechercheprofil?idFormation=3221381&idSession=4816400 style="text-decoration: none" target="_blank" rel="noopener noreferrer"><span style="font-weight:600;padding: 8px 12px;font-family: Helvetica, Arial, sans-serif;font-size: 15px; color: #ffffff;border-radius:6px;text-decoration: none;font-weight:bold;color:#FFF;background-color:#ff5950">Voir ces profils sur pole-emploi.fr</span></a></td></tr></tbody></table>
-
-
-                                          </td>
-                                      </tr>
-                                    </table>
-                              </td>
-                          </tr>
-                        </tbody>
-                    </table>
-<!-- Bye bye -->
-                                                                        
-                                                                            
-                                                                            <p style="color: #666666; margin:0 0 1em 0;">Cordialement,
-                                                                                <br>L'&eacute;quipe P&ocirc;le emploi</p>
-                                                                            <br>
-                                                                        </div>
-                                                                    </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td width="580" height="1" bgcolor="#eee">
-                                                                    </tr>
-                                                            </tbody>
-                                                        </table>
-                                                        </td>
-                                                        <td width="35"></td>
-                                                        </tr>
-                                        </tbody>
-                                    </table>
-                                    </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="650" height="60" bgcolor="#ffffff"></td>
-                                    </tr>
-                                    <tr>
-                                        <td width="650">
-                                            <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#4e8d6b">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="5" height="15"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="35"></td>
-                                                        <td width="300" valign="middle">
-                                                            <p align="left" style="color:#fff; font-size: 0.7em;">
-                                                                &copy; 2016 P&ocirc;le emploi. Tous droits r&eacute;serv&eacute;s.
-                                                            </p>
-                                                        </td>
-                                                        <td width="35"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="5" height="15"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td width="650">
-                                            <table width="650" cellpadding="0" cellspacing="0" border="0" bgcolor="#579d78">
-                                                <tbody>
-                                                    <tr>
-                                                        <td colspan="5" height="30"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td width="35"></td>
-                                                        <td width="580" valign="middle">
-                                                            <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">
-                                                                Ce courriel vous est envoy&eacute; automatiquement, merci de ne pas utiliser la fonction &quot;r&eacute;pondre &agrave; l'exp&eacute;diteur&quot;.
-                                                            </p>
-                                                            <!-- <p align="center"  style="color:#fff; font-size: 0.7em; margin: 5px;">
+                                                    --></th>
+																			</tr>
+																			<tr>
+																				<td valign="top"><span style="font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">Disponibilité immédiate &bull; Profil mis &agrave; jour le 10/01/2021</span></td>
+																			</tr>
+																			<tr>
+																				<td height="50" width="520"><span style="font-size: 12px; font-weight: medium; font-family: Arial, Helvetica, Geneva, sans serif; color: #000000">&#171; Forte de plusieurs missions en tant qu'agent d'entretien, je suis à la recherche d'un poste durable. &#187;</span></td>
+																			</tr>
+																			<tr>
+																				<td height="20" style="padding-bottom: 10px;"><span style = "font-size: 12px; font-family: Arial, Helvetica, Geneva, sans serif"><br> Comp&eacute;tences non renseignées </span></td>
+																			</tr>
+																		</table>
+																		<p>
+																		<table border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 10px; padding-top: 10px" width="600">
+																			<tr>
+																				<td colspan="2" style="border: 1px; border-color: #cccccc; border-style: solid none none none; padding-bottom: 10px"></td>
+																			</tr>
+																		</table><!-- Traitement -->
+																		<table align="center" border="0" cellpadding="0" cellspacing="0" style="text-align: center; horizontal-align: middle; margin-bottom: 20px; margin-top: 20px; display: block; border-radius:6px; box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.08)" width="580">
+																			<tbody>
+																				<tr>
+																					<td colspan="2" style="padding: 15px 35px 10px 35px;">
+																						<span>Cliquez ci-dessous pour en savoir plus sur ces profils et contacter les candidats :</span>
+																						<table cellpadding="0" cellspacing="0" width="100%">
+																							<tr>
+																								<td>
+																									<table class="tg" style="border-spacing:0;margin:15px auto">
+																										<tbody>
+																											<tr>
+																												<td style="border-color:#000000;border-style:solid;border-width:0px;font-family:Arial, border-radius:6px;sans-serif;font-size:14px;text-decoration: none;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal"><a href="https://entreprise.pole-emploi.fr/recherche-profil/rechercheprofil?idFormation=3221381&idSession=4816400" rel="noopener noreferrer" style="text-decoration: none" target="_blank"><span style="font-weight:600;padding: 8px 12px;font-family: Helvetica, Arial, sans-serif;font-size: 15px; color: #ffffff;border-radius:6px;text-decoration: none;font-weight:bold;color:#FFF;background-color:#ff5950">Voir ces profils sur pole-emploi.fr</span></a></td>
+																											</tr>
+																										</tbody>
+																									</table>
+																								</td>
+																							</tr>
+																						</table>
+																					</td>
+																				</tr>
+																			</tbody>
+																		</table><!-- Bye bye -->
+																		<p style="color: #666666; margin:0 0 1em 0;">Cordialement,<br>
+																		L'&eacute;quipe P&ocirc;le emploi</p><br>
+																	</div>
+																</td>
+															</tr>
+															<tr>
+																<td bgcolor="#eee" height="1" width="580"></td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+												<td width="35"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td bgcolor="#FFFFFF" height="60" width="650"></td>
+							</tr>
+							<tr>
+								<td width="650">
+									<table bgcolor="#4E8D6B" border="0" cellpadding="0" cellspacing="0" width="650">
+										<tbody>
+											<tr>
+												<td colspan="5" height="15"></td>
+											</tr>
+											<tr>
+												<td width="35"></td>
+												<td valign="middle" width="300">
+													<p align="left" style="color:#fff; font-size: 0.7em;">&copy; 2016 P&ocirc;le emploi. Tous droits r&eacute;serv&eacute;s.</p>
+												</td>
+												<td width="35"></td>
+											</tr>
+											<tr>
+												<td colspan="5" height="15"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td width="650">
+									<table bgcolor="#579D78" border="0" cellpadding="0" cellspacing="0" width="650">
+										<tbody>
+											<tr>
+												<td colspan="5" height="30"></td>
+											</tr>
+											<tr>
+												<td width="35"></td>
+												<td valign="middle" width="580">
+													<p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Ce courriel vous est envoy&eacute; automatiquement, merci de ne pas utiliser la fonction &quot;r&eacute;pondre &agrave; l'exp&eacute;diteur&quot;.</p><!-- <p align="center"  style="color:#fff; font-size: 0.7em; margin: 5px;">
                                              Vous ne souhaitez pas recevoir ce type d'e-mail ? <a  href="#paths" target="_blank" style="color:#fff;">Modifiez vos pr&eacute;f&eacute;rences</a>
                                              </p> -->
-                                                            <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">
-                                                                Une question ? <a href="https://www1.pole-emploi.fr/faq/" target="_blank" style="color:#fff;">Consultez notre FAQ</a>
-                                                            </p>
-                                                            <p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">
-                                                                Vous disposez d'un droit d'accès et de rectification aux informations qui vous concernent auprès de P&ocirc;le emploi conform&eacute;ment &agrave; la loi du 6 janvier 1978, modifi&eacute;e, relative &agrave; l'informatique, aux fichiers et aux libert&eacute;s.
-                                                            </p>
-                                                        </td>
-                                                        <td width="35"></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td colspan="5" height="30"></td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
-                    </td>
-                    </tr>
-        </tbody>
-    </table>
+													<p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Une question ? <a href="https://www1.pole-emploi.fr/faq/" style="color:#fff;" target="_blank">Consultez notre FAQ</a></p>
+													<p align="center" style="color:#fff; font-size: 0.7em; margin: 5px;">Vous disposez d'un droit d'accès et de rectification aux informations qui vous concernent auprès de P&ocirc;le emploi conform&eacute;ment &agrave; la loi du 6 janvier 1978, modifi&eacute;e, relative &agrave; l'informatique, aux fichiers et aux libert&eacute;s.</p>
+												</td>
+												<td width="35"></td>
+											</tr>
+											<tr>
+												<td colspan="5" height="30"></td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
-
 </html>
